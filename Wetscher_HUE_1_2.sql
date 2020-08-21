@@ -93,7 +93,8 @@ JOIN employees m ON e.manager_id = m.employee_id;
 
 SELECT c.country_name, r.region_name
 FROM countries c
-JOIN regions r;
+JOIN regions r
+ON c.region_id = r.region_id;
 
 SELECT first_name, last_name, department_name
 FROM employees
